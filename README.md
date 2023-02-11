@@ -9,8 +9,11 @@ branch INDEX et DEVELOP créées
 en gros si cela pouvait ressembler à ça  
 component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCliked` créé
   
-<img src="./src/assets/images/mainPagewireframe.jpg" height="400"/> <img src="./src/assets/images/mealClickedWireframe.jpg" height="400"/>
-
+<img src="./src/assets/images/mainPagewireframe.jpg" height="400"/> <img src="./src/assets/images/mealClickedWireframe.jpg" height="400"/>  
+  
+si on s'approche de ça pour la liste, je pense que c'est cool  
+<img src="./src/assets/images/listModel.jpg" height="400"/>  
+  
 ### Trello
 
 [le Trello partagé](https://trello.com/b/VqSGVKoA/applibouffe)
