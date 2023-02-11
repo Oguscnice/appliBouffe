@@ -2,11 +2,11 @@
 
 en gros si cela pouvait ressembler à ça  
   
-![imageWireframe](./assets/images/mainPagewireframe.png)  
+![imageWireframe](./src/assets/images/mainPagewireframe.png)  
     
 et une fois une recette cliquée
     
-![imageWireframeClicked](./assets/images/mealClickedWireframe.jpg)  
+![imageWireframeClicked](./src/assets/images/mealClickedWireframe.jpg)  
 
 ## Development server
 
