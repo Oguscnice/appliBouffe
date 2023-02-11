@@ -8,7 +8,7 @@ en gros si cela pouvait ressembler à ça
   
 component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCliked` créé
   
-<img src="./src/assets/images/mainPagewireframe.png" alt="drawing" width="400"/> <img src="./src/assets/images/mealClickedWireframe.jpg" alt="drawing" width="200"/>
+<img src="./src/assets/images/mainPagewireframe.jpg" height="400"/> <img src="./src/assets/images/mealClickedWireframe.jpg" height="400"/>
 
 ## SCSS
 
