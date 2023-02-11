@@ -1,37 +1,16 @@
 # AppliBouffe
 
+les PUSH nécéssitent juste une PR pour pouvoir merge, pas de confirmation (comme ça on peut push sans attendre les amis -et Nico- pour se débrouiller seul, donc faites gaffe au cas où)  
+  
+branc INDEX et DEVELOP créées
+  
 en gros si cela pouvait ressembler à ça  
   
-![imageWireframe](./src/assets/images/mainPagewireframe.png)  
-    
-et une fois une recette cliquée
-    
-![imageWireframeClicked](./src/assets/images/mainPagewireframeClicked.png)  
+component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCliked` créé
   
-pas de Figma (wireframe, maquette) on y va au talent)  
-toutes les idées sont les bienvenues ! ballec c'est un truc perso  
-  
+<img src="./src/assets/images/mainPagewireframe.jpg" height="400"/> <img src="./src/assets/images/mealClickedWireframe.jpg" height="400"/>
 
-## Development server
+## SCSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Projet créé en `SCSS` sur le principe ça fonctionne à 95% comme CSS, les variables sont différentes (déjà installé) (si besoin la quête [SCSS Odyssey](https://odyssey.wildcodeschool.com/quests/551). Donc vous pouvez coder en CSS sur les fichiers SCSS.  
+J'ai déjà posé quelques variables (couleurs et polices) qu'on adaptera plus tard quand l'esthétique deviendra intéréssant, pour le moment c'ets pas le problème, mais essayez-de vous servir des variables, pour pas qu'on se retartine tout à la fin.
