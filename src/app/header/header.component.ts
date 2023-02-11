@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   searchInputForm: string = '';
+  menuVisibility :boolean = false;
+
 
   inputChange(stringReceiveForInput: string): void {
     this.searchInputForm = stringReceiveForInput;
   }
+
+  menuburger(){
+    this.menuVisibility = !this.menuVisibility
+}
+
 }

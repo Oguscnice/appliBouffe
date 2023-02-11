@@ -9,7 +9,7 @@
 }
 
 $main-color: black;
-$second-color: rgba(39, 39, 39, 1);;
+$second-color: rgba(39, 39, 39, 1);
 $third-color: rgba(62, 60, 60, 1);
 $fourth-color: rgb(255, 255, 255);
 
@@ -18,3 +18,20 @@ $titleH2FontFamily: "Good Timing", sans-serif;
 $titleH3FontFamily: "Good Timing", sans-serif;
 $titleH4FontFamily: "Good Timing", sans-serif;
 $textFontFamily: "Good Timing", sans-serif;
+
+h1 {
+  font-family: $titleH1FontFamily;
+}
+h2 {
+  font-family: $titleH2FontFamily;
+}
+h3 {
+  font-family: $titleH3FontFamily;
+}
+h4 {
+  font-family: $titleH4FontFamily;
+}
+p {
+  font-family: $textFontFamily;
+  color: $fourth-color;
+}
