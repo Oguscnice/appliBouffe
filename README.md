@@ -7,7 +7,7 @@ branc INDEX et DEVELOP créées
 en gros si cela pouvait ressembler à ça  
   
 component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCliked` créé
-  
+  <img src="./src/assets/images/mainPagewireframe.png" alt="drawing" width="200"/>
 ![imageWireframe](./src/assets/images/mainPagewireframe.jpg =200x) ![imageWireframeClicked](./src/assets/images/mealClickedWireframe.jpg =200x)  
 
 ## SCSS
