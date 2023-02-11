@@ -1,6 +1,16 @@
 # AppliBouffe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+en gros si cela pouvait ressembler à ça  
+  
+![imageWireframe](./src/assets/images/mainPagewireframe.png)  
+    
+et une fois une recette cliquée
+    
+![imageWireframeClicked](./src/assets/images/mainPagewireframeClicked.png)  
+  
+pas de Figma (wireframe, maquette) on y va au talent)  
+toutes les idées sont les bienvenues ! ballec c'est un truc perso  
+  
 
 ## Development server
 
