@@ -2,7 +2,7 @@
 
 en gros si cela pouvait ressembler à ça  
   
-![imageWireframe](./src/assets/images/mainPagewireframe.png)  
+![imageWireframe](./src/assets/images/mainPagewireframe.jpg)  
     
 et une fois une recette cliquée
     
