@@ -10,6 +10,6 @@ component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCl
   
 ![imageWireframe](./src/assets/images/mainPagewireframe.jpg) ![imageWireframeClicked](./src/assets/images/mealClickedWireframe.jpg)  
 
-## Further help
+## SCSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Projet créé en `SCSS` sur le principe ça fonctionne à 95% comme CSS, les variables sont différentes (déjà installé) (si besoin la quête [SCSS Odyssey]([https://odyssey.wildcodeschool.com/quests/551]).
