@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+$main-color: black;
+$second-color: rgba(39, 39, 39, 1);;
+$third-color: rgba(62, 60, 60, 1);
+$fourth-color: rgb(255, 255, 255);
+
+$titleH1FontFamily: "Good Timing", sans-serif;
+$titleH2FontFamily: "Good Timing", sans-serif;
+$titleH3FontFamily: "Good Timing", sans-serif;
+$titleH4FontFamily: "Good Timing", sans-serif;
+$textFontFamily: "Good Timing", sans-serif;

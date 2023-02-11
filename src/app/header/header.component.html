@@ -1,1 +1,22 @@
-<p>header works!</p>
+<header>
+  <img
+    src="../../assets/images/logohasbulla.png"
+    [routerLink]="['/']"
+    alt="Logo du site"
+    height="100px"
+  />
+  <div class="inputForSearch">
+    <form #myForm="ngForm">
+      <!-- Input avec la valeure recherchée -->
+      <label for="searchInput"></label>
+      <input
+        type="text"
+        value="Rechercher une recette"
+        id="searchInput"
+        name="searchInput"
+        (keyup)="inputChange(searchInputForm)"
+      />
+    </form>
+  </div>
+  <div>Menu Burger à faire</div>
+</header>
