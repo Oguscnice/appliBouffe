@@ -1,6 +1,12 @@
 # AppliBouffe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+en gros si cela pouvait ressembler à ça  
+  
+  ![imageWireframe](./assets/images/mainPagewireframe.png)  
+    
+    et une fois une recette cliquée
+    
+      ![imageWireframeClicked](./assets/images/mealClickedWireframe.jpg)  
 
 ## Development server
 
