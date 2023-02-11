@@ -14,4 +14,15 @@ component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCl
 ## SCSS
 
 Projet créé en `SCSS` sur le principe ça fonctionne à 95% comme CSS, les variables sont différentes (déjà installé) (si besoin la quête [SCSS Odyssey](https://odyssey.wildcodeschool.com/quests/551). Donc vous pouvez coder en CSS sur les fichiers SCSS.  
-J'ai déjà posé quelques variables (couleurs et polices) qu'on adaptera plus tard quand l'esthétique deviendra intéréssant, pour le moment c'ets pas le problème, mais essayez-de vous servir des variables, pour pas qu'on se retartine tout à la fin.
+J'ai déjà posé quelques variables (couleurs et polices) qu'on adaptera plus tard quand l'esthétique deviendra intéréssant, pour le moment c'ets pas le problème, mais essayez-de vous servir des variables, pour pas qu'on se retartine tout à la fin.  
+  
+pour les variables is vous voulez pas vous embêter avec la quête ==>
+```
+    $couleur-principale: #fffff;
+    $couleur-secondaire: #00000;
+
+    .monSiteTresColore {
+        color: $couleur-principale;
+        background-color : $couleur-secondaire
+    }
+```
