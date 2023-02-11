@@ -2,6 +2,8 @@
 
 les PUSH nécéssitent juste une PR pour pouvoir merge, pas de confirmation (comme ça on peut push sans attendre les amis -et Nico- pour se débrouiller seul, donc faites gaffe au cas où)  
   
+branc INDEX et DEVELOP créées
+  
 en gros si cela pouvait ressembler à ça  
   
 component pour `MainPage` (incluant les app Header, Dropdown et List) et `MealCliked` créé
