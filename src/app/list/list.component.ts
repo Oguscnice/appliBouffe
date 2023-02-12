@@ -25,6 +25,9 @@ export class ListComponent {
     this.searchReceipeForAllIngredientInArray();
   }
 
+  
+  // On a un tableau (arraIngredientsFromDropDown), on boucle sur ce tableau, à chaque item on fait une
+  // requête API, la requête ne fonctionne pas
   searchReceipeForAllIngredientInArray() {
     console.log(this.arrayIngredientsFromDropdown); //fonctionne
     for (let i = 0; i < this.arrayIngredientsFromDropdown.length; i++) {
