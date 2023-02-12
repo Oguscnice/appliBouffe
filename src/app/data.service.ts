@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
+
 export class DataService {
   constructor(private http: HttpClient) {}
 
@@ -38,26 +39,26 @@ export class DataService {
     return this.http.get<any>('www.themealdb.com/api/json/v1/1/categories.php');
   }
 
-  //liste de toutes les catégories
-  searchAllCategories() {
-    return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/list.php?c=list'
-    );
-  }
+  //liste de toutes les catégories  (DEJA MIS DANS LE DATA CATEGORIESLIST.TS)
+  // searchAllCategories() {
+  //   return this.http.get<any>(
+  //     'www.themealdb.com/api/json/v1/1/list.php?c=list'
+  //   );
+  // }
 
-  //liste de toutes les Area (zone géographique, exemple : -plats- Canadiens)
-  searchAllArea() {
-    return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/list.php?a=list'
-    );
-  }
+  //liste de toutes les Area (zone géographique, exemple : -plats- Canadiens)  (DEJA MIS DANS LE DATA AREASLIST.TS)
+  // searchAllArea() {
+  //   return this.http.get<any>(
+  //     'www.themealdb.com/api/json/v1/1/list.php?a=list'
+  //   );
+  // }
 
-  //liste de toutes les ingredients
-  searchAllIngredients() {
-    return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/list.php?i=list'
-    );
-  }
+  //liste de toutes les ingredients (DEJA MIS DANS LE DATA INGREDIENTSLIST.TS)
+  // searchAllIngredients() {
+  //   return this.http.get<any>(
+  //     'www.themealdb.com/api/json/v1/1/list.php?i=list'
+  //   );
+  // }
 
   //Filtrer par ingredients principales
   searchByMainIngredients(mainIngredientsSearched: string) {

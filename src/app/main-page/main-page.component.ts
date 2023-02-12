@@ -7,8 +7,19 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
   textStringReceiveFormHeaderForm: string = '';
+  arrayOfIngredientHaveFormDropdown : string[]=[]
+  arrayOfIngredientHaventFormDropdown : string[]=[]
 
-  receivesearchInputTextForm(inputTextFormReceiveViaOutput: string): void {
+  receiveSearchInputTextForm(inputTextFormReceiveViaOutput: string): void {
     this.textStringReceiveFormHeaderForm = inputTextFormReceiveViaOutput;
   }
+
+  receiveIngredientHaveArraySearchFromDropdown(arrayIngredientHaveReceive : string[]){
+    this.arrayOfIngredientHaveFormDropdown = arrayIngredientHaveReceive
+  }
+
+  receiveIngredientHaventArraySearchFromDropdown(arrayIngredientHaventReceive : string[]){
+    this.arrayOfIngredientHaventFormDropdown = arrayIngredientHaventReceive
+  }
+
 }

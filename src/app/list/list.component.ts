@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IngredientsList } from '../data/ingredientsList';
+import { AreasList } from '../data/areasList'
+import { CategoriesList } from '../data/categoriesList';
 
 @Component({
   selector: 'app-list',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-
+@Input() textStringReceiveFormHeaderForm:string = ''
 }
