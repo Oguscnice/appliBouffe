@@ -11,7 +11,7 @@
         *ngFor="let ingredient of ingredientsList"
         [ngStyle]="{
           display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
-                ? 'block'
+                ? 'flex'
                 : 'none'
         }"
       >
@@ -36,7 +36,7 @@
         *ngFor="let ingredient of ingredientsList"
         [ngStyle]="{
           display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
-                ? 'block'
+                ? 'flex'
                 : 'none'
         }"
       >
@@ -44,7 +44,7 @@
           type="checkbox"
           name="{{ingredient.strIngredient}}"
           id="{{ingredient.strIngredient}}"
-          (click)="updateDropdownHave(ingredient.strIngredient)"
+          (click)="updateDropdownHavent(ingredient.strIngredient)"
         /><label for="{{ingredient.strIngredient}}">{{ ingredient.strIngredient }}</label>
       </div>
     </div>
