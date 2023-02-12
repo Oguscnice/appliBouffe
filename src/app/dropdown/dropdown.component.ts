@@ -7,8 +7,8 @@ import { IngredientsList } from '../data/ingredientsList';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
-  dropdownHave: boolean = true;
-  dropdownHavent: boolean = true;
+  dropdownHave: boolean = false;
+  dropdownHavent: boolean = false;
   ingredientHave: string[] = [];
   ingredientHavent: string[] = [];
   ingredientsList : any[] = IngredientsList.sort((a: any, b: any) => (a.strIngredient > b.strIngredient ? 1 : -1))
@@ -25,6 +25,7 @@ export class DropdownComponent {
   }
 
   iHaventVissibility() {
+    console.log("coucou")
     this.dropdownHavent = !this.dropdownHavent;
   }
 
