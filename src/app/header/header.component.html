@@ -3,7 +3,6 @@
     src="../../assets/images/logohasbulla.png"
     [routerLink]="['/']"
     alt="Logo du site"
-    height="100px"
   />
   <div class="inputForSearch">
     <form #myForm="ngForm">
@@ -11,12 +10,30 @@
       <label for="searchInput"></label>
       <input
         type="text"
-        value="Rechercher une recette"
+        value=" Rechercher"
         id="searchInput"
         name="searchInput"
+        [(ngModel)]="searchInputForm"
         (keyup)="inputChange(searchInputForm)"
       />
     </form>
   </div>
-  <div>Menu Burger à faire</div>
+  <div class="navbar-mobile">
+    <i *ngIf="!menuVisibility" (click)="menuburger()" class="fas fa-bars"></i>
+    <div
+      (click)="menuburger()"
+      [ngClass]="!menuVisibility ? 'menuburgerback' : 'change-menuburgerback'"
+    >
+      <div class="navbar-mobile-list">
+        <i class="fa-solid fa-circle-xmark closeMenuBurgerCross"></i>
+        <p class="aburger" [routerLink]="'/'">?</p>
+        <p class="aburger" [routerLink]="'/'">?</p>
+        <p class="aburger" [routerLink]="'/'">?</p>
+      </div>
+    </div>
+    <div
+      [ngClass]="!menuVisibility ? 'genreBurgerback' : 'change-genreBurgerback'"
+    >
+    </div>
+  </div>
 </header>
