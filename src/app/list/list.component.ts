@@ -29,9 +29,12 @@ export class ListComponent {
     for (let ingredient of this.arrayIngredientsFromDropdown) {
       this.dataService
         .searchByMainIngredients(ingredient)
-      .subscribe((data) => this.receipeFromMainIngredient.push(data));
+        .subscribe((data) => this.receipeFromMainIngredient.push(data));
     }
-    console.log(this.arrayIngredientsFromDropdown); //fonctionne
+    console.log(this.arrayIngredientsFromDropdown);
     console.log(this.receipeFromMainIngredient);
   }
 }
+// Quand on coche un truc dans le drop down il y a une requête api qui se fait directement dessus
+// Genre tu recherches egg il y a une requête API qui se fait sur toute les recettes avec des oeufs
+// Clairement pas ce qu'on veut je pense finalement, à mon avis on veut un truc qui includes tout les ingrédients qui sont coché à la fin
