@@ -1,15 +1,17 @@
 @import "../../styles.scss";
 
 header {
+  z-index: 999;
   display: flex;
-  background-color: $second-color;
   align-items: center;
-  height: 5vh;
-  padding: 2%;
+  height: 10vh;
+  padding: 1.5vh;
+  border: 1px solid $main-color;
 
   > img {
     height: 100%;
     padding-right: 2%;
+    background-color: $second-color;
   }
 
   > .inputForSearch {
@@ -29,7 +31,6 @@ header {
     display: block;
     justify-content: flex-end;
     align-items: center;
-    background-color: $main-color;
 
     > i {
       z-index: 999;
@@ -46,12 +47,14 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: $second-color;
+        background-color: $main-color;
 
-        > .close {
+        > .closeMenuBurgerCross {
           display: flex;
           justify-content: flex-end;
-          padding: 16px;
+          scale: 3;
+          background-color: $main-color;
+          color: white;
         }
 
         > .aburger {
@@ -59,6 +62,7 @@ header {
           padding: 2rem;
           cursor: pointer;
           border-bottom: 1px solid $fourth-color;
+          background-color: $main-color;
         }
       }
     }

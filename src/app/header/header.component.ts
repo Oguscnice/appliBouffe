@@ -10,8 +10,9 @@ export class HeaderComponent {
   menuVisibility :boolean = false;
 
 
-  inputChange(stringReceiveForInput: string): void {
-    this.searchInputForm = stringReceiveForInput;
+  inputChange(stringReceiveForInput: any): void {
+    // this.searchInputForm = stringReceiveForInput
+    console.log(this.searchInputForm);
   }
 
   menuburger(){

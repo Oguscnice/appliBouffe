@@ -1,7 +1,53 @@
 @import "../../styles.scss";
 
-
-div{
+.dropdowns {
+  display: flex;
+  width: 100%;
+  z-index: 990;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
   background-color: $main-color;
-  height: 5vh;
+
+  > .dropdownSelect {
+    height: 5vh;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $second-color;
+
+    > .dropdownTitle {
+      display: flex;
+      padding-top: 1.5vh;
+      padding-bottom: 1.5vh;
+      border-radius: 10px;
+
+      > span {
+        width: 30%;
+      }
+
+      > p {
+        width: 70%;
+      }
+    }
+
+    >.dropdown{
+      z-index: 999;
+      >.dropdownInside{
+        z-index: 999;
+        height :4vh;
+        border: 1px solid $main-color;
+        display: flex;
+        align-items: center;
+        >input{
+          
+          width: 20%;
+        }
+        >label{
+          text-align: left;
+width: 80%;
+        }
+      }
+    }
+  }
 }
