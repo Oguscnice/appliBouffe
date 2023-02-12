@@ -34,3 +34,8 @@ pour les variables si vous voulez pas vous embêter avec la quête, plus de `var
         background-color : $couleur-secondaire
     }
 ```
+
+### DataBase  
+  
+3 requêtes ont été copiées "en dur" dans le dossier data (pour réduire le nombre de requêtes consommées)
+<img src="./src/assets/images/dataBaseRequestedjpg.jpg">

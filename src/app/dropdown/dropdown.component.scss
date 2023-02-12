@@ -2,7 +2,6 @@
 
 .dropdowns {
   display: flex;
-  width: 100%;
   z-index: 990;
   justify-content: space-around;
   align-items: center;
@@ -13,6 +12,7 @@
     height: 5vh;
     width: 30%;
     text-align: center;
+
     border-radius: 10px;
     background-color: $second-color;
 
@@ -24,28 +24,24 @@
 
       > span {
         width: 30%;
+        cursor: pointer;
       }
-
       > p {
         width: 70%;
       }
     }
 
-    >.dropdown{
-      z-index: 999;
-      >.dropdownInside{
+    > .dropdown {
+      > .dropdownInside {
         z-index: 999;
-        height :4vh;
+        height: 4vh;
         border: 1px solid $main-color;
-        display: flex;
+        width: 100%;
+        justify-content: flex-start;
         align-items: center;
-        >input{
-          
+        text-align: left;
+        > input {
           width: 20%;
-        }
-        >label{
-          text-align: left;
-width: 80%;
         }
       }
     }

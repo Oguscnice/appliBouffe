@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { IngredientsList } from '../data/ingredientsList';
+import { AreasList } from '../data/areasList'
+import { CategoriesList } from '../data/categoriesList';
+
+
 
 @Component({
   selector: 'app-header',
@@ -8,11 +13,12 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   searchInputForm: string = '';
   menuVisibility :boolean = false;
+  @Output() searchInputTextForm: EventEmitter<string> = new EventEmitter();
 
 
   inputChange(stringReceiveForInput: any): void {
-    // this.searchInputForm = stringReceiveForInput
-    console.log(this.searchInputForm);
+    this.searchInputForm = stringReceiveForInput
+    this.searchInputTextForm.emit(this.searchInputForm);
   }
 
   menuburger(){
