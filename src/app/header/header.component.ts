@@ -1,4 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { IngredientsList } from '../data/ingredientsList';
+
 
 @Component({
   selector: 'app-header',
