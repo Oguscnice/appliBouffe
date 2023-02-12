@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { IngredientsList } from '../data/ingredientsList';
 
 @Component({
@@ -7,10 +7,14 @@ import { IngredientsList } from '../data/ingredientsList';
   styleUrls: ['./dropdown.component.scss'],
 })
 export class DropdownComponent {
-  dropdownHave: boolean = false;
-  dropdownHavent: boolean = false;
+  dropdownHave: boolean = true;
+  dropdownHavent: boolean = true;
   ingredientHave: string[] = [];
   ingredientHavent: string[] = [];
+  ingredientsList : any[] = IngredientsList.sort((a: any, b: any) => (a.strIngredient > b.strIngredient ? 1 : -1))
+
+  @Input() textStringReceiveFormHeaderForm : string = ""
+
   @Output() ingredientArrayHaveFromDropdown: EventEmitter<string[]> =
     new EventEmitter();
   @Output() ingredientArrayHaventFromDropdown: EventEmitter<string[]> =
@@ -33,6 +37,7 @@ export class DropdownComponent {
       this.ingredientHave.push(ingredientCheckboxed);
     }
     this.ingredientArrayHaveFromDropdown.emit(this.ingredientHave);
+    console.log(this.ingredientHave);
   }
 
   updateDropdownHavent(ingredientCheckboxed: any): void {
@@ -45,4 +50,12 @@ export class DropdownComponent {
     }
     this.ingredientArrayHaventFromDropdown.emit(this.ingredientHavent);
   }
+
+filterNameWithInputTextFromHeader(ingredientNameFromDataTS : string):boolean {
+  if (ingredientNameFromDataTS.toLowerCase().includes(this.textStringReceiveFormHeaderForm.toLowerCase())){
+    return true
+  }
+  return false
+}
+
 }

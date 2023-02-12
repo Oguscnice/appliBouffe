@@ -1,6 +1,4 @@
-export const IngredientsList = 
-{
-  "meals": [
+export const IngredientsList =  [
     {
       "idIngredient": "1",
       "strIngredient": "Chicken",
@@ -3446,4 +3444,3 @@ export const IngredientsList =
       "strType": "Grain"
     }
   ]
-}

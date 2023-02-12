@@ -21,31 +21,31 @@
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
       border-radius: 10px;
-
       > span {
         width: 30%;
       }
-
       > p {
         width: 70%;
       }
     }
 
-    >.dropdown{
+    > .dropdown {
       z-index: 999;
-      >.dropdownInside{
+      display: flex;
+      flex-direction: column;;
+      align-items: flex-start;
+      > .dropdownInside {
         z-index: 999;
-        height :4vh;
+        height: 4vh;
         border: 1px solid $main-color;
-        display: flex;
-        align-items: center;
-        >input{
-          
+        width: 100%;
+
+        > input {
           width: 20%;
         }
-        >label{
+        > label {
           text-align: left;
-width: 80%;
+          width: 80%;
         }
       }
     }
