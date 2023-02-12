@@ -62,28 +62,28 @@ export class DataService {
   //Filtrer par ingredients principales
   searchByMainIngredients(mainIngredientsSearched: string) {
     return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/filter.php?i=' + mainIngredientsSearched
+      'https://www.themealdb.com/api/json/v1/1/filter.php?i=' + mainIngredientsSearched
     );
   }
 
   //Filtrer par Catégorie
   searchByCategory(categorySearched: string) {
     return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/filter.php?c=' + categorySearched
+      'https://www.themealdb.com/api/json/v1/1/filter.php?c=' + categorySearched
     );
   }
 
   //filtrer par Area (zone géographique, exemple : -plats- Canadiens)
   searchByArea(areaSearched: string) {
     return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/filter.php?a=' + areaSearched
+      'https://www.themealdb.com/api/json/v1/1/filter.php?a=' + areaSearched
     );
   }
 
   //récupérer une 'petite' image du plat
   searchSmallMealPicture(mealPictureSearched: string) {
     return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/filter.php?a=' +
+      'https://www.themealdb.com/api/json/v1/1/filter.php?a=' +
         mealPictureSearched +
         '/images/media/meals/llcbn01574260722.jpg/preview'
     );
@@ -92,7 +92,7 @@ export class DataService {
   //récupérer une image de l'ingrédient
   searchIngredientPicture(ingredientSearched: string) {
     return this.http.get<any>(
-      'www.themealdb.com/images/ingredients/' + ingredientSearched + '.png'
+      'https://www.themealdb.com/images/ingredients/' + ingredientSearched + '.png'
     );
   }
 }
