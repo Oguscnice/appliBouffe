@@ -14,27 +14,22 @@ export class ListComponent {
   areasList: any[] = AreasList;
   categoriesList: any[] = CategoriesList;
 
-  receipeFromMainIngredient: any;
+  receipeFromMainIngredient: string[] = [];
   constructor(private dataService: DataService) {}
 
   @Input() textStringReceiveFormHeaderForm: string = '';
   @Input() arrayIngredientsFromDropdown: string[] = [];
 
   ngOnChanges() {
-    // console.log(this.textStringReceiveFormHeaderForm);
     this.searchReceipeForAllIngredientInArray();
   }
 
-  
-  // On a un tableau (arraIngredientsFromDropDown), on boucle sur ce tableau, à chaque item on fait une
-  // requête API, la requête ne fonctionne pas
   searchReceipeForAllIngredientInArray() {
-    console.log(this.arrayIngredientsFromDropdown); //fonctionne
-    for (let i = 0; i < this.arrayIngredientsFromDropdown.length; i++) {
+    for (let ingredient of this.arrayIngredientsFromDropdown) {
       this.dataService
-        .searchByMainIngredients(this.arrayIngredientsFromDropdown[i])
-        .subscribe((data) => this.receipeFromMainIngredient.push(...data));
-      console.log(this.receipeFromMainIngredient); // Undefined
+        .searchByMainIngredients(ingredient)
+        .subscribe((data) => console.log(...data(ingredient)));
     }
+    console.log(this.arrayIngredientsFromDropdown);
   }
 }
