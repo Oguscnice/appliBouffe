@@ -14,13 +14,14 @@ export class ListComponent {
   areasList: any[] = AreasList;
   categoriesList: any[] = CategoriesList;
 
-  receipeFromMainIngredient: string[] = [];
+  receipeFromMainIngredient: any[] = [];
   constructor(private dataService: DataService) {}
 
   @Input() textStringReceiveFormHeaderForm: string = '';
   @Input() arrayIngredientsFromDropdown: string[] = [];
 
   ngOnChanges() {
+    // console.log(this.textStringReceiveFormHeaderForm);
     this.searchReceipeForAllIngredientInArray();
   }
 
@@ -28,8 +29,9 @@ export class ListComponent {
     for (let ingredient of this.arrayIngredientsFromDropdown) {
       this.dataService
         .searchByMainIngredients(ingredient)
-        .subscribe((data) => console.log(...data(ingredient)));
+      .subscribe((data) => this.receipeFromMainIngredient.push(data));
     }
-    console.log(this.arrayIngredientsFromDropdown);
+    console.log(this.arrayIngredientsFromDropdown); //fonctionne
+    console.log(this.receipeFromMainIngredient);
   }
 }
