@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { IngredientsList } from '../data/ingredientsList';
 import { AreasList } from '../data/areasList';
 import { CategoriesList } from '../data/categoriesList';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-list',
@@ -13,10 +14,24 @@ export class ListComponent {
   areasList: any[] = AreasList;
   categoriesList: any[] = CategoriesList;
 
+  receipeFromMainIngredient: any;
+  constructor(private dataService: DataService) {}
+
   @Input() textStringReceiveFormHeaderForm: string = '';
   @Input() arrayIngredientsFromDropdown: string[] = [];
 
   ngOnChanges() {
-    console.log(this.arrayIngredientsFromDropdown);
+    // console.log(this.textStringReceiveFormHeaderForm);
+    this.searchReceipeForAllIngredientInArray();
+  }
+
+  searchReceipeForAllIngredientInArray() {
+    console.log(this.arrayIngredientsFromDropdown); //fonctionne
+    for (let i = 0; i < this.arrayIngredientsFromDropdown.length; i++) {
+      this.dataService
+        .searchByMainIngredients(this.arrayIngredientsFromDropdown[i])
+        .subscribe((data) => this.receipeFromMainIngredient.push(...data));
+      console.log(this.receipeFromMainIngredient); // Undefined
+    }
   }
 }

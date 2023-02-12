@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-
 export class DataService {
   constructor(private http: HttpClient) {}
 
@@ -85,7 +84,7 @@ export class DataService {
   searchSmallMealPicture(mealPictureSearched: string) {
     return this.http.get<any>(
       'www.themealdb.com/api/json/v1/1/filter.php?a=' +
-      mealPictureSearched +
+        mealPictureSearched +
         '/images/media/meals/llcbn01574260722.jpg/preview'
     );
   }
