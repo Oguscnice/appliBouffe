@@ -14,4 +14,9 @@ export class ListComponent {
   categoriesList: any[] = CategoriesList;
 
   @Input() textStringReceiveFormHeaderForm: string = '';
+  @Input() arrayIngredientsFromDropdown: string[] = [];
+
+  ngOnChanges() {
+    console.log(this.arrayIngredientsFromDropdown);
+  }
 }

@@ -37,7 +37,7 @@ export class DropdownComponent {
       this.ingredientHave.push(ingredientCheckboxed);
     }
     this.ingredientArrayHaveFromDropdown.emit(this.ingredientHave);
-    console.log("Have"+this.ingredientHave);
+    // console.log("Have"+this.ingredientHave);
   }
 
   updateDropdownHavent(ingredientCheckboxed: any): void {
