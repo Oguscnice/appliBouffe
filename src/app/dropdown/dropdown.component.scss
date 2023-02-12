@@ -12,7 +12,7 @@
     height: 5vh;
     width: 30%;
     text-align: center;
-    
+
     border-radius: 10px;
     background-color: $second-color;
 
@@ -21,16 +21,19 @@
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
       border-radius: 10px;
+
       > span {
         width: 30%;
+        cursor: pointer;
       }
       > p {
         width: 70%;
+        margin: auto;
+        text-align: left;
       }
     }
 
     > .dropdown {
-
       > .dropdownInside {
         z-index: 999;
         height: 4vh;

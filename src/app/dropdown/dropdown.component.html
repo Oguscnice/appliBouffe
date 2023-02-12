@@ -30,7 +30,7 @@
       <span *ngIf="dropdownHavent">🔺</span>
       <p>Je n'ai pas</p>
     </div>
-    <div class="dropdown">
+    <div class="dropdown" *ngIf="dropdownHavent">
       <div
         class="dropdownInside"
         *ngFor="let ingredient of ingredientsList"
