@@ -1,47 +1,51 @@
 <div class="dropdowns">
   <div class="dropdownSelect dropdownHave">
     <div class="dropdownTitle" (click)="iHaveVissibility()">
-      <span>🔽</span>
+      <span *ngIf="!dropdownHave">🔽</span>
+      <span *ngIf="dropdownHave">🔺</span>
       <p>J'ai</p>
     </div>
-    <div class="dropdown">
-      <div class="dropdownInside" *ngIf="dropdownHave">
-        <input type="checkbox" name="firstTest" id="firstTest" (click)="updateDropdownHave('firstTest')"/><label
-          for="firstTest"
-          >firstTest</label
-        >
-      </div>
-      <div class="dropdownInside" *ngIf="dropdownHave">
-        <input type="checkbox" name="firstTest2" id="firstTest2" (click)="updateDropdownHave('firstTest2')"/><label
-          for="firstTest2"
-          >firstTest</label
-        >
-      </div>
-      <div class="dropdownInside" *ngIf="dropdownHave">
-        <input type="checkbox" name="firstTest3" id="firstTest3" (click)="updateDropdownHave('firstTest3')"/><label
-          for="firstTest3"
-          >firstTest</label
-        >
+    <div class="dropdown" *ngIf="dropdownHave">
+      <div
+        class="dropdownInside"
+        *ngFor="let ingredient of ingredientsList"
+        [ngStyle]="{
+          display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
+                ? 'flex'
+                : 'none'
+        }"
+      >
+        <input
+          type="checkbox"
+          name="{{ingredient.strIngredient}}"
+          id="{{ingredient.strIngredient}}"
+          (click)="updateDropdownHave(ingredient.strIngredient)"
+        /><label for="{{ingredient.strIngredient}}">{{ ingredient.strIngredient }}</label>
       </div>
     </div>
   </div>
   <div class="dropdownSelect dropdownHavent">
     <div class="dropdownTitle" (click)="iHaventVissibility()">
-      <span>🔽</span>
+      <span *ngIf="!dropdownHavent">🔽</span>
+      <span *ngIf="dropdownHavent">🔺</span>
       <p>Je n'ai pas</p>
     </div>
     <div class="dropdown">
-      <div class="dropdownInside" *ngIf="dropdownHavent">
-        <input type="checkbox" name="secondTest" id="secondTest" />
-        <label for="secondTest">secondTest</label>
-      </div>
-      <div class="dropdownInside" *ngIf="dropdownHavent">
-        <input type="checkbox" name="secondTest" id="secondTest" />
-        <label for="secondTest">secondTest</label>
-      </div>
-      <div class="dropdownInside" *ngIf="dropdownHavent">
-        <input type="checkbox" name="secondTest" id="secondTest" />
-        <label for="secondTest">secondTest</label>
+      <div
+        class="dropdownInside"
+        *ngFor="let ingredient of ingredientsList"
+        [ngStyle]="{
+          display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
+                ? 'flex'
+                : 'none'
+        }"
+      >
+        <input
+          type="checkbox"
+          name="{{ingredient.strIngredient}}"
+          id="{{ingredient.strIngredient}}"
+          (click)="updateDropdownHavent(ingredient.strIngredient)"
+        /><label for="{{ingredient.strIngredient}}">{{ ingredient.strIngredient }}</label>
       </div>
     </div>
   </div>

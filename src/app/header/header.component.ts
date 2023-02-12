@@ -1,5 +1,8 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { IngredientsList } from '../data/ingredientsList';
+import { AreasList } from '../data/areasList'
+import { CategoriesList } from '../data/categoriesList';
+
 
 
 @Component({
