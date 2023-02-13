@@ -8,10 +8,12 @@ import { CategoriesList } from '../data/categoriesList';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
 })
-export class ListComponent {
+
+export class ListComponent  {
   ingredientsList: any[] = IngredientsList;
   areasList: any[] = AreasList;
   categoriesList: any[] = CategoriesList;
 
   @Input() textStringReceiveFormHeaderForm: string = '';
+
 }

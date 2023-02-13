@@ -4,7 +4,7 @@ export const IngredientsList = [
     strIngredient: 'Chicken',
     strIngredientFR: 'Poulet',
     strDescription:
-      "Le poulet est un type de volaille domestique, une sous-espèce de la sauvagine rouge (Gallus gallus). C'est l'un des animaux domestiques les plus courants et les plus répandus, avec une population totale de plus de 19 milliards en 2011. Il y a plus de poulets dans le monde que tout autre oiseau ou volaille domestique. Les humains élèvent les poulets principalement comme source de nourriture (consommant à la fois leur viande et leurs œufs) et, moins fréquemment, comme animaux de compagnie. À l'origine élevés pour les combats de coqs ou pour des cérémonies spéciales, les poulets n'ont pas été conservés pour la nourriture jusqu'à la période hellénistique (IVe-IIe siècles avant JC).\r\n\r\nDes études génétiques ont mis en évidence de multiples origines maternelles en Asie du Sud, en Asie du Sud-Est et en Asie de l'Est, mais avec le clade trouvé dans le Amériques, Europe, Moyen-Orient et Afrique originaires du sous-continent indien. De l'Inde ancienne, le poulet domestiqué s'est propagé à la Lydie dans l'ouest de l'Asie Mineure et à la Grèce au Ve siècle avant J.-C. La volaille était connue en Égypte depuis le milieu du XVe siècle. siècle avant JC, avec le \" oiseau qui donne naissance tous les jours\" étant venu en Egypte du pays entre la Syrie et Shinar, Babylone, selon les annales de Thoutmosis III.",
+      "Le poulet est un type de volaille domestique, une sous-espèce de la sauvagine rouge (Gallus gallus). C'est l'un des animaux domestiques les plus courants et les plus répandus, avec une population totale de plus de 19 milliards en 2011. Il y a plus de poulets dans le monde que tout autre oiseau ou volaille domestique. Les humains élèvent les poulets principalement comme source de nourriture (consommant à la fois leur viande et leurs oeufs) et, moins fréquemment, comme animaux de compagnie. À l'origine élevés pour les combats de coqs ou pour des cérémonies spéciales, les poulets n'ont pas été conservés pour la nourriture jusqu'à la période hellénistique (IVe-IIe siècles avant JC).\r\n\r\nDes études génétiques ont mis en évidence de multiples origines maternelles en Asie du Sud, en Asie du Sud-Est et en Asie de l'Est, mais avec le clade trouvé dans le Amériques, Europe, Moyen-Orient et Afrique originaires du sous-continent indien. De l'Inde ancienne, le poulet domestiqué s'est propagé à la Lydie dans l'ouest de l'Asie Mineure et à la Grèce au Ve siècle avant J.-C. La volaille était connue en Égypte depuis le milieu du XVe siècle. siècle avant JC, avec le \" oiseau qui donne naissance tous les jours\" étant venu en Egypte du pays entre la Syrie et Shinar, Babylone, selon les annales de Thoutmosis III.",
     strType: null,
   },
   {
@@ -20,7 +20,7 @@ export const IngredientsList = [
     strIngredient: 'Beef',
     strIngredientFR: 'Boeuf',
     strDescription:
-      "Le bœuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du bœuf depuis la préhistoire. Le bœuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de bœuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les côtes courtes ou le steak (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de bœuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le cœur, le cerveau (bien qu'interdits là où il existe un danger d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les testicules tendres du taureau (connus aux États-Unis sous le nom de frites de veau, huîtres des Prairies ou huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de bœuf.",
+      "Le boeuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du boeuf depuis la préhistoire. Le boeuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de boeuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les côtes courtes ou le steak (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de boeuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le coeur, le cerveau (bien qu'interdits là où il existe un danger d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les testicules tendres du taureau (connus aux États-Unis sous le nom de frites de veau, huîtres des Prairies ou huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de boeuf.",
     strType: null,
   },
   {
@@ -36,7 +36,7 @@ export const IngredientsList = [
     strIngredient: 'Avocado',
     strIngredientFR: 'Avocat',
     strDescription:
-      'L’avocat, un arbre d’origine probable dans le centre-sud du Mexique, est classé comme un membre de la famille des plantes à fleurs Lauraceae. Le fruit de la plante, également appelé avocat (ou poire avocat ou poire alligator), est botaniquement une grosse baie contenant une seule grosse graine. \r\n\r\nLes avocats ont une valeur commerciale et sont cultivés dans les climats tropicaux et méditerranéens du monde entier. Ils ont un corps charnu à la peau verte qui peut être en forme de poire, d’œuf ou sphérique. Commercialement, ils mûrissent après la récolte. Les avocatiers sont partiellement autogames et sont souvent multipliés par greffage pour maintenir une qualité et une quantité prévisibles des fruits. En 2017, le Mexique a produit 34% de l’offre mondiale d’avocats.',
+      'L’avocat, un arbre d’origine probable dans le centre-sud du Mexique, est classé comme un membre de la famille des plantes à fleurs Lauraceae. Le fruit de la plante, également appelé avocat (ou poire avocat ou poire alligator), est botaniquement une grosse baie contenant une seule grosse graine. \r\n\r\nLes avocats ont une valeur commerciale et sont cultivés dans les climats tropicaux et méditerranéens du monde entier. Ils ont un corps charnu à la peau verte qui peut être en forme de poire, d’oeuf ou sphérique. Commercialement, ils mûrissent après la récolte. Les avocatiers sont partiellement autogames et sont souvent multipliés par greffage pour maintenir une qualité et une quantité prévisibles des fruits. En 2017, le Mexique a produit 34% de l’offre mondiale d’avocats.',
     strType: null,
   },
   {
@@ -140,7 +140,7 @@ export const IngredientsList = [
     strIngredient: 'Beef Brisket',
     strIngredientFR: 'Poitrine de boeuf',
     strDescription:
-      "Le bœuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du bœuf depuis la préhistoire. Le bœuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de bœuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de bœuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le cœur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de bœuf.",
+      "Le boeuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du boeuf depuis la préhistoire. Le boeuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de boeuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de boeuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le coeur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de boeuf.",
     strType: null,
   },
   {
@@ -148,7 +148,7 @@ export const IngredientsList = [
     strIngredient: 'Beef Fillet',
     strIngredientFR: 'Filet de boeuf',
     strDescription:
-      "Le bœuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du bœuf depuis la préhistoire. Le bœuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de bœuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de bœuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le cœur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de bœuf.",
+      "Le boeuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du boeuf depuis la préhistoire. Le boeuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de boeuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de boeuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le coeur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de boeuf.",
     strType: null,
   },
   {
@@ -156,15 +156,15 @@ export const IngredientsList = [
     strIngredient: 'Beef Gravy',
     strIngredientFR: 'Sauce au boeuf',
     strDescription:
-      "Le bœuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du bœuf depuis la préhistoire. Le bœuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de bœuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de bœuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le cœur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de bœuf.",
+      "Le boeuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du boeuf depuis la préhistoire. Le boeuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de boeuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de boeuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le coeur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de boeuf.",
     strType: null,
   },
   {
     idIngredient: '26',
     strIngredient: 'Beef Stock',
-    strIngredientFR: 'Bouillon de bœuf',
+    strIngredientFR: 'Bouillon de boeuf',
     strDescription:
-      "Le bœuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du bœuf depuis la préhistoire. Le bœuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de bœuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de bœuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le cœur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de bœuf.",
+      "Le boeuf est le nom culinaire de la viande de bétail, en particulier des muscles squelettiques. Les humains mangent du boeuf depuis la préhistoire. Le boeuf est une source de protéines et de nutriments de haute qualité.\r\n\r\nLa plupart de la viande de muscle squelettique de boeuf peut être utilisée telle quelle en la coupant simplement en certaines parties, comme les rôtis, les bouts de côtes ou le bifteck (filet mignon, bifteck de surlonge , rumsteck, rib steak, rib eye steak, hanger steak, etc.), tandis que d'autres coupes sont transformées (corned beef ou beef jerky). Les parures, en revanche, sont généralement mélangées à de la viande de bovins plus âgés et plus maigres (donc plus coriaces), sont broyées, hachées ou utilisées dans des saucisses. Le sang est utilisé dans certaines variétés appelées boudin. D'autres parties consommées comprennent d'autres muscles et abats, tels que la queue de boeuf, le foie, la langue, les tripes du réticulum ou du rumen, les glandes (en particulier le pancréas et le thymus, appelés ris de veau), le coeur, le cerveau (bien qu'interdits là où il existe un risque d'encéphalopathie spongiforme bovine, ESB, communément appelée maladie de la vache folle), les reins et les tendres testicules du taureau (connus aux États-Unis sous le nom de frites de veau, d'huîtres des Prairies ou d'huîtres des Rocheuses). Certains intestins sont cuits et consommés tels quels, mais sont plus souvent nettoyés et utilisés comme boyaux naturels de saucisses. Les os sont utilisés pour faire du bouillon de boeuf.",
     strType: null,
   },
   {
@@ -180,7 +180,7 @@ export const IngredientsList = [
     strIngredient: 'Biryani Masala',
     strIngredientFR: 'Biryani Masala',
     strDescription:
-      "Biryani, également connu sous le nom de biriyani, biriani, birani ou briyani, est un plat de riz mélangé avec ses origines chez les musulmans du sous-continent indien. Cela peut être comparé au mélange d'un curry, puis en le combinant séparément avec du riz mi-cuit. Ce plat est particulièrement populaire dans tout le sous-continent indien, ainsi que parmi la diaspora de la région. Il est également préparé dans d'autres régions comme le Kurdistan irakien. Il est composé d'épices indiennes, de riz, de viande (poulet, chèvre, bœuf, agneau, crevette ou poisson), de légumes ou d'œufs.",
+      "Biryani, également connu sous le nom de biriyani, biriani, birani ou briyani, est un plat de riz mélangé avec ses origines chez les musulmans du sous-continent indien. Cela peut être comparé au mélange d'un curry, puis en le combinant séparément avec du riz mi-cuit. Ce plat est particulièrement populaire dans tout le sous-continent indien, ainsi que parmi la diaspora de la région. Il est également préparé dans d'autres régions comme le Kurdistan irakien. Il est composé d'épices indiennes, de riz, de viande (poulet, chèvre, boeuf, agneau, crevette ou poisson), de légumes ou d'oeufs.",
     strType: null,
   },
   {
@@ -320,21 +320,21 @@ export const IngredientsList = [
   },
   {
     idIngredient: '50',
-    strIngredientF: 'Noix de cajou',
+    strIngredientFR: 'Noix de cajou',
     strIngredient: 'Cashew Nuts',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '51',
-    strIngredientF: 'Noix de cajou',
+    strIngredientFR: 'Noix de cajou',
     strIngredient: 'Cashews',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '52',
-    strIngredientF: 'Sucre en poudre',
+    strIngredientFR: 'Sucre en poudre',
     strIngredient: 'Caster Sugar',
     strDescription: null,
     strType: null,
@@ -782,28 +782,28 @@ export const IngredientsList = [
   },
   {
     idIngredient: '120',
-    strIngredientFR: "Rouleaux d'œufs",
+    strIngredientFR: "Rouleaux d'oeufs",
     strIngredient: 'Egg Rolls',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '121',
-    strIngredientFR: "Blanc d'œuf",
+    strIngredientFR: "Blanc d'oeuf",
     strIngredient: 'Egg White',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '122',
-    strIngredientFR: "Jaune d'œuf",
+    strIngredientFR: "Jaune d'oeuf",
     strIngredient: 'Egg Yolks',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '123',
-    strIngredientFR: 'Œufs',
+    strIngredientFR: 'oeufs',
     strIngredient: 'Eggs',
     strDescription: null,
     strType: null,
@@ -887,7 +887,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '136',
-    strIngredientFR: 'œufs de lin',
+    strIngredientFR: 'oeufs de lin',
     strIngredient: 'Flax Eggs',
     strDescription: null,
     strType: null,
@@ -915,14 +915,14 @@ export const IngredientsList = [
   },
   {
     idIngredient: '140',
-    strIngredientFR: 'œuf de poule élevée en liberté, battu',
+    strIngredientFR: 'oeuf de poule élevée en liberté, battu',
     strIngredient: 'Free-range Egg, Beaten',
     strDescription: null,
     strType: null,
   },
   {
     idIngredient: '141',
-    strIngredientFR: ' œufs de poules élevées en liberté, battus',
+    strIngredientFR: 'oeufs de poules élevées en liberté, battus',
     strIngredient: 'Free-range Eggs, Beaten',
     strDescription: null,
     strType: null,
@@ -1286,7 +1286,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '195',
-    strIngredientFR: 'viande de bœuf maigre hachée',
+    strIngredientFR: 'viande de boeuf maigre hachée',
     strIngredient: 'Lean Minced Beef',
     strDescription: null,
     strType: null,
@@ -3197,7 +3197,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '483',
-    strIngredientFR: 'Oeuf',
+    strIngredientFR: 'oeuf',
     strIngredient: 'Egg',
     strDescription: null,
     strType: null,
@@ -3431,7 +3431,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '516',
-    strIngredientFR: 'Queue de bœuf',
+    strIngredientFR: 'Queue de boeuf',
     strIngredient: 'Oxtail',
     strDescription:
       'Oxtail (occasionally spelled ox tail or ox-tail) is the culinary name for the tail of cattle. Formerly, it referred only to the tail of an ox or steer, a bullock (a castrated male).[citation needed] An oxtail typically weighs 2 to 4 lbs. (1–1.8 kg) and is skinned and cut into short lengths for sale.\r\n\r\nOxtail is a bony, gelatin-rich meat, which is usually slow-cooked as a stew[1] or braised. It is a traditional stock base for a soup. Traditional preparations involve slow cooking, so some modern recipes take a shortcut using a pressure cooker. Oxtail is the main ingredient of the Italian dish coda alla vaccinara (a classic of Roman cuisine). It is a popular flavour for powder, instant and premade canned soups in the United Kingdom and Ireland. Oxtails are also one of the popular bases for Russian aspic appetizer dishes (холодец or студень), along with pig trotters or ears or cow "knees", but are the preferred ingredients among Russian Jews because they can be Kosher.\r\n\r\nVersions of oxtail soup are popular traditional dishes in South America, West Africa, China, Spain [2] and Indonesia. In Chinese cuisine, it\'s usually made into a soup called 牛尾汤 (niúwěi tāng, "oxtail soup"). In Korean cuisine, a soup made with oxtail is called kkori gomtang (see gomguk). It is a thick soup seasoned with salt and eaten with a bowl of rice. It can be used as a stock for making tteokguk (rice cake soup). Stewed oxtail with butter bean or as main dish (with rice) is popular in Jamaica, Trinidad, and other West Indian cultures. Oxtail is also very popular in South Africa where it is often cooked in a traditional skillet called a potjie, which is a three-legged cast iron pot placed over an open fire. Oxtail is also eaten in other southern parts of Africa like Zimbabwe and served with sadza and greens. In the United States, oxtail is a mainstay in African American and West Indian households. In Cuban cuisine, a stew can be made from oxtail called rabo encendido. In the Philippines, it is prepared in a peanut based stew called Kare-kare. In Iran, Oxtail is slow-cooked and served as a substitute for shank in a main dish called Baghla-Poli-Mahicheh which is prepared with rice, shank (or oxtail) and a mixture of herbs including dill, coriander, parsley and garlic.\r\n\r\nIn the United States, oxtail has the meat-cutting classification NAMP 1791.',
@@ -3591,7 +3591,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '536',
-    strIngredientFR: ' Rhum brun',
+    strIngredientFR: 'Rhum brun',
     strIngredient: 'Dark Rum',
     strDescription:
       'Rum is a distilled alcoholic drink made from sugarcane byproducts, such as molasses, or directly from sugarcane juice, by a process of fermentation and distillation. The distillate, a clear liquid, is then usually aged in oak barrels.\r\n\r\nThe majority of the world\'s rum production occurs in the Caribbean and Latin America. Rum is also produced in Australia, Portugal, Austria, Canada, Fiji, India, Japan, Mauritius, Nepal, New Zealand, the Philippines, Reunion Island, South Africa, Spain, Sweden, Taiwan, Thailand, the United Kingdom and the United States.\r\n\r\nRums are produced in various grades. Light rums are commonly used in cocktails, whereas "golden" and "dark" rums were typically consumed straight or neat, on the rocks, or used for cooking, but are now commonly consumed with mixers. Premium rums are also available, made to be consumed either straight or iced.\r\n\r\nRum plays a part in the culture of most islands of the West Indies as well as in The Maritimes and Newfoundland. This drink has famous associations with the Royal Navy (where it was mixed with water or beer to make grog) and piracy (where it was consumed as bumbo). Rum has also served as a popular medium of economic exchange, used to help fund enterprises such as slavery (see Triangular trade), organized crime, and military insurgencies (e.g., the American Revolution and Australia\'s Rum Rebellion).',

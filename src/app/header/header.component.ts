@@ -17,7 +17,7 @@ export class HeaderComponent {
 
 
   inputChange(stringReceiveForInput: any): void {
-    this.searchInputForm = stringReceiveForInput
+    this.searchInputForm = stringReceiveForInput.toLowerCase()
     this.searchInputTextForm.emit(this.searchInputForm);
   }
 
