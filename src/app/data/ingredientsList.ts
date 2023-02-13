@@ -628,7 +628,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '97',
-    strIngredientFR: '',
+    strIngredientFR: 'Graines de coriandre',
     strIngredient: 'Coriander Seeds',
     strDescription: null,
     strType: null,
@@ -992,7 +992,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '151',
-    strIngredientFR: '',
+    strIngredientFR: 'Poudre d'ail',
     strIngredient: 'Garlic Powder',
     strDescription: null,
     strType: null,
@@ -2317,7 +2317,7 @@ export const IngredientsList = [
     idIngredient: '352',
     strIngredientFR: 'Fettuccine pates',
     strIngredient: 'Fettuccine',
-    strDescription: '',
+    strDescription: null,
     strType: null,
   },
   {
@@ -2331,7 +2331,7 @@ export const IngredientsList = [
     idIngredient: '354',
     strIngredientFR: 'Farine de maïs',
     strIngredient: 'Corn Flour',
-    strDescription: '',
+    strDescription: null,
     strType: null,
   },
   {
@@ -2366,21 +2366,21 @@ export const IngredientsList = [
     idIngredient: '359',
     strIngredientFR: 'Petits calmars',
     strIngredient: 'Baby Squid',
-    strDescription: '',
+    strDescription: null,
     strType: null,
   },
   {
     idIngredient: '360',
     strIngredientFR: 'Calmars',
     strIngredient: 'Squid',
-    strDescription: '',
+    strDescription: null,
     strType: null,
   },
   {
     idIngredient: '361',
     strIngredientFR: 'Bouillon de poisson',
     strIngredient: 'Fish Stock',
-    strDescription: '',
+    strDescription: null,
     strType: null,
   },
   {
