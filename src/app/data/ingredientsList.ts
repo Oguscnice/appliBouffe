@@ -992,7 +992,7 @@ export const IngredientsList = [
   },
   {
     idIngredient: '151',
-    strIngredientFR: 'Poudre d'ail',
+    strIngredientFR: "Poudre d'ail",
     strIngredient: 'Garlic Powder',
     strDescription: null,
     strType: null,
