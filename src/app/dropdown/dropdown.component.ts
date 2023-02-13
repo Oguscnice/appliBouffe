@@ -11,7 +11,7 @@ export class DropdownComponent {
   dropdownHavent: boolean = false;
   ingredientHave: string[] = [];
   ingredientHavent: string[] = [];
-  ingredientsList : any[] = IngredientsList.sort((a: any, b: any) => (a.strIngredient > b.strIngredient ? 1 : -1))
+  ingredientsList : any[] = IngredientsList.sort((a: any, b: any) => (a.strIngredientFR > b.strIngredientFR ? 1 : -1))
 
   @Input() textStringReceiveFormHeaderForm : string = ""
 
