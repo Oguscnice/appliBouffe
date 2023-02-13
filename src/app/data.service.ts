@@ -25,7 +25,7 @@ export class DataService {
   //Chercher un repas par son ID
   searchMealByID(idSearched: number) {
     return this.http.get<any>(
-      'www.themealdb.com/api/json/v1/1/lookup.php?i=' + idSearched
+      'https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + idSearched
     );
   }
 

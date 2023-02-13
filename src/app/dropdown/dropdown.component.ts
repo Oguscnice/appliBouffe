@@ -25,7 +25,6 @@ export class DropdownComponent {
   }
 
   iHaventVissibility() {
-    console.log("coucou")
     this.dropdownHavent = !this.dropdownHavent;
   }
 
@@ -52,7 +51,9 @@ export class DropdownComponent {
   }
 
 filterNameWithInputTextFromHeader(ingredientNameFromDataTS : string):boolean {
-  if (ingredientNameFromDataTS.toLowerCase().includes(this.textStringReceiveFormHeaderForm.toLowerCase())){
+  console.log(ingredientNameFromDataTS, this.textStringReceiveFormHeaderForm);
+  
+  if (ingredientNameFromDataTS.includes(this.textStringReceiveFormHeaderForm)){
     return true
   }
   return false
