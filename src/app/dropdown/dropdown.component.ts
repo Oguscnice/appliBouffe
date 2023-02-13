@@ -38,8 +38,7 @@ export class DropdownComponent {
       this.ingredientHave.push(ingredientCheckboxed);
     }
     this.ingredientArrayHaveFromDropdown.emit(this.ingredientHave);
-    console.log("Have"+this.ingredientHave);
-  }
+ }
 
   updateDropdownHavent(ingredientCheckboxed: any): void {
     if (this.ingredientHavent.includes(ingredientCheckboxed)) {
@@ -50,8 +49,6 @@ export class DropdownComponent {
       this.ingredientHavent.push(ingredientCheckboxed);
     }
     this.ingredientArrayHaventFromDropdown.emit(this.ingredientHavent);
-    console.log("Havent"+this.ingredientHavent);
-
   }
 
 filterNameWithInputTextFromHeader(ingredientNameFromDataTS : string):boolean {
