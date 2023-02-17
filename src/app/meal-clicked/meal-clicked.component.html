@@ -1,1 +1,43 @@
-<p>meal-clicked works!</p>
+<img
+class="logo"
+  src="../../assets/images/logohasbulla.png"
+  [routerLink]="['/']"
+  alt="Logo du site"
+/>
+<div class="allInformationsMealClicked">
+  <h3>{{ informationMeal[0].strMeal }}</h3>
+  <div class="underTitle">
+    <img
+      src="{{ informationMeal[0].strMealThumb }}"
+      alt="image du plat {{ informationMeal[0].strMeal }}"
+    />
+    <div class="presentation">
+      <h4>Zone Géographique : {{ informationMeal[0].strArea }}</h4>
+      <h5>Rappel des unités de mesure :</h5>
+      <p>1 oz (once) = 28gr (ou 30ml)</p>
+      <p>1 cup = 225gr (ou 240ml)</p>
+      <p>1 inch (pouce) = 2,5cm</p>
+    </div>
+  </div>
+  <div class="ingredientsForMeal">
+    <div
+      class="ingredientAndQuantity"
+      *ngFor="let ingredient of ingredientAndQuantity"
+    >
+      <img
+        src="{{ ingredient[3] }}"
+        alt="image de l'ingredient {{ ingredient[1] }}"
+      />
+      <p>{{ ingredient[0] }}</p>
+      <p>{{ ingredient[2] }}</p>
+    </div>
+  </div>
+  :
+  <ul class="recipes" *ngIf="this.recipes.length > 0">
+    <span> Recette</span>
+    :
+    <li *ngFor="let step of recipes; let index = index">
+      {{ index+1 }} - {{ step }}
+    </li>
+  </ul>
+</div>

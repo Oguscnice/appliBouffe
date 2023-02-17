@@ -5,22 +5,28 @@
       <span *ngIf="dropdownHave">🔺</span>
       <p>J'ai</p>
     </div>
-    <div class="dropdown" *ngIf="dropdownHave">
-      <div
-        class="dropdownInside"
-        *ngFor="let ingredient of ingredientsList"
-        [ngStyle]="{
-          display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
-                ? 'flex'
-                : 'none'
-        }"
-      >
+    <div
+      class="dropdown"
+      *ngFor="let ingredient of ingredientsList"
+      [ngStyle]="{
+        display:
+          dropdownHave &&
+          filterNameWithInputTextFromHeader(
+            ingredient.strIngredientFR.toLowerCase()
+          )
+            ? 'flex'
+            : 'none'
+      }"
+    >
+      <div class="dropdownInside">
         <input
           type="checkbox"
-          name="{{ingredient.strIngredient}}"
-          id="{{ingredient.strIngredient}}"
+          name="{{ ingredient.strIngredient }}"
+          id="{{ ingredient.strIngredient }}"
           (click)="updateDropdownHave(ingredient.strIngredient)"
-        /><label for="{{ingredient.strIngredient}}">{{ ingredient.strIngredientFR }}</label>
+        /><label for="{{ ingredient.strIngredient }}">{{
+          ingredient.strIngredientFR
+        }}</label>
       </div>
     </div>
   </div>
@@ -30,22 +36,26 @@
       <span *ngIf="dropdownHavent">🔺</span>
       <p>Je n'ai pas</p>
     </div>
-    <div class="dropdown" *ngIf="dropdownHavent">
-      <div
-        class="dropdownInside"
-        *ngFor="let ingredient of ingredientsList"
-        [ngStyle]="{
-          display: filterNameWithInputTextFromHeader(ingredient.strIngredient)
-                ? 'flex'
-                : 'none'
-        }"
-      >
+    <div
+      class="dropdown"
+      *ngFor="let ingredient of ingredientsList"
+      [ngStyle]="{
+        display:
+          dropdownHavent &&
+          filterNameWithInputTextFromHeader(ingredient.strIngredientFR)
+            ? 'flex'
+            : 'none'
+      }"
+    >
+      <div class="dropdownInside">
         <input
           type="checkbox"
-          name="{{ingredient.strIngredient}}"
-          id="{{ingredient.strIngredient}}"
+          name="{{ ingredient.strIngredient }}"
+          id="{{ ingredient.strIngredient }}"
           (click)="updateDropdownHavent(ingredient.strIngredient)"
-        /><label for="{{ingredient.strIngredient}}">{{ ingredient.strIngredientFR }}</label>
+        /><label for="{{ ingredient.strIngredient }}">{{
+          ingredient.strIngredientFR
+        }}</label>
       </div>
     </div>
   </div>
