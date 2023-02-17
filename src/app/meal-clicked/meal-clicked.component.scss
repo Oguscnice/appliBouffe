@@ -1,5 +1,64 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.ingredientsForMeal{
+.logo{
+  width: 50px;
+  padding: 2%;
+}
+
+.allInformationsMealClicked {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  > h3 {
+    color: $fourth-color;
+    font-size: 2.5rem;
+    text-decoration: underline;
+  }
+  > .underTitle {
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    > img {
+      max-width: 50%;
+      height: 30vh;
+      border-radius: 25px;
+    }
+    > .presentation {
+      padding: 2%;
+      > h4 {
+        color: $fourth-color;
+        font-size: 1.2rem;
+        padding-top: 4%;
+      }
+      > h5 {
+        @extend h4;
+      }
+      > p {
+        padding-top: 4%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  > .ingredientsForMeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 16px;
+    > .ingredientAndQuantity {
+      padding-top: 4%;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+  > .recipes {
+    color: $fourth-color;
+    font-size: 1.3rem;
+    padding-top: 4%;
+
+    > span {
+      text-decoration: underline;
+    }
+  }
 }

@@ -6,6 +6,7 @@ describe('MealClickedComponent', () => {
   let component: MealClickedComponent;
   let fixture: ComponentFixture<MealClickedComponent>;
 
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ MealClickedComponent ]
