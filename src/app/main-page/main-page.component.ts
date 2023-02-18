@@ -10,7 +10,7 @@ export class MainPageComponent {
   arrayOfIngredientHaveFormDropdown : string[]=[]
   arrayOfIngredientHaventFormDropdown : string[]=[]
 
-  receiveSearchInputTextForm(inputTextFormReceiveViaOutput: string): void {
+  receiveSearchInputTextFormHeader(inputTextFormReceiveViaOutput: string): void {
     this.textStringReceiveFormHeaderForm = inputTextFormReceiveViaOutput;
   }
 

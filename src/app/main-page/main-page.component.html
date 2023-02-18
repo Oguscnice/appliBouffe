@@ -1,9 +1,13 @@
 <app-header
-  (searchInputTextForm)="receiveSearchInputTextForm($event)"
+  (searchInputTextForm)="receiveSearchInputTextFormHeader($event)"
 ></app-header>
 <app-dropdown
-  (ingredientArrayHaveFromDropdown)="receiveIngredientHaveArraySearchFromDropdown($event)"
-  (ingredientArrayHaventFromDropdown)="receiveIngredientHaventArraySearchFromDropdown($event)"
+  (ingredientArrayHaveFromDropdown)="
+    receiveIngredientHaveArraySearchFromDropdown($event)
+  "
+  (ingredientArrayHaventFromDropdown)="
+    receiveIngredientHaventArraySearchFromDropdown($event)
+  "
   [textStringReceiveFormHeaderForm]="textStringReceiveFormHeaderForm"
 ></app-dropdown>
 <app-list
