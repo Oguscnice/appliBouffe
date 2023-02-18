@@ -30,22 +30,22 @@ export class HeaderComponent {
     this.menuVisibility = !this.menuVisibility;
   }
   ngOnInit() {
-    this.go();
+    // this.go();
   }
 
 
-  async go(){
-    const qb = new MarmitonQueryBuilder();
-    // A query builder is provided to make complex queries
-    const query = qb
-      .withTitleContaining('soja')
-      .withoutOven()
-      .withPrice(RECIPE_PRICE.CHEAP)
-      .takingLessThan(45)
-      .withDifficulty(RECIPE_DIFFICULTY.EASY)
-      .build()
-    // Fetch the recipes
-    const recipes: Recipe[] = await searchRecipes(query)
-    console.log(recipes);
-  }
+  // async go(){
+  //   const qb = new MarmitonQueryBuilder();
+  //   // A query builder is provided to make complex queries
+  //   const query = qb
+  //     .withTitleContaining('soja')
+  //     .withoutOven()
+  //     .withPrice(RECIPE_PRICE.CHEAP)
+  //     .takingLessThan(45)
+  //     .withDifficulty(RECIPE_DIFFICULTY.EASY)
+  //     .build()
+  //   // Fetch the recipes
+  //   const recipes: Recipe[] = await searchRecipes(query)
+  //   console.log(recipes);
+  // }
 }

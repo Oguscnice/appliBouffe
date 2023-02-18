@@ -1,5 +1,24 @@
 <div class="lists">
-  <p>list works!</p>
+  <div
+    *ngFor="let recipe of myRecipesList"
+    class="oneRecipe"
+    [ngStyle]="{
+      display: filterNameWithInputTextFromHeader(recipe.strMeal)
+        ? 'flex'
+        : 'none'
+    }"
+  >
+    <h3
+      routerLink="/meal/{{ recipe.idMeal }}"
+      [ngStyle]="{
+        background: recipe.strMealThumb
+          ? 'url(' + recipe.strMealThumb + ')'
+          : 'url(../assets/images/logoPlat.jpg)',
+        'background-size': 'cover'
+      }"
+      *ngIf="recipe.strMeal"
+    >
+      {{ recipe.strMeal }}
+    </h3>
+  </div>
 </div>
-<!--sur DIV complete
-[routerLink]="['/meal', meal.idMeal]" -->
