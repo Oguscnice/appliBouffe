@@ -51,8 +51,6 @@ export class DropdownComponent {
   }
 
 filterNameWithInputTextFromHeader(ingredientNameFromDataTS : string):boolean {
-  console.log(ingredientNameFromDataTS, this.textStringReceiveFormHeaderForm);
-  
   if (ingredientNameFromDataTS.includes(this.textStringReceiveFormHeaderForm)){
     return true
   }

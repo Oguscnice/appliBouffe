@@ -9,13 +9,14 @@ import { IngredientsList } from '../data/ingredientsList';
   styleUrls: ['./meal-clicked.component.scss'],
 })
 export class MealClickedComponent implements OnInit {
-  mealId: number = 0;
+  mealId!: number;
   informationMeal: any;
   ingredients: string[] = [];
-  ingredientsFR : string[] = [];
+  ingredientsFR: string[] = [];
   ingredientsQuantites: string[] = [];
   ingredientAndQuantity: any[] = [];
-  ingredientsList : any = IngredientsList
+  ingredientsList: any = IngredientsList;
+  recipes : string[] = []
 
   constructor(
     private route: ActivatedRoute,
@@ -39,33 +40,47 @@ export class MealClickedComponent implements OnInit {
         ) {
           this.ingredients.push(this.informationMeal[0][property]);
         } else if (
-          property.includes('strMeasure') && (
+          property.includes('strMeasure') &&
           this.informationMeal[0][property] !== null &&
-          this.informationMeal[0][property] !== '')
+          this.informationMeal[0][property] !== ''
         ) {
           this.ingredientsQuantites.push(this.informationMeal[0][property]);
         }
       }
 
-      for (let quantity = 0; quantity < this.ingredientsQuantites.length; quantity++) {
-      this.ingredientsQuantites[quantity] = this.ingredientsQuantites[quantity].replaceAll(
-        'teaspoon',
-        'cuillère à café')
-        this.ingredientsQuantites[quantity] = this.ingredientsQuantites[quantity].replaceAll(
-          'Tablespoons',
-          'grosse cuillère')
+      for (
+        let quantity = 0;
+        quantity < this.ingredientsQuantites.length;
+        quantity++
+      ) {
+        this.ingredientsQuantites[quantity] = this.ingredientsQuantites[
+          quantity
+        ].replaceAll('teaspoon', 'cuillère à café');
+        this.ingredientsQuantites[quantity] = this.ingredientsQuantites[
+          quantity
+        ].replaceAll('Tablespoons', 'grosse cuillère');
       }
 
       for (let i = 0; i < this.ingredients.length; i++) {
-        for (let ingredient in this.ingredientsList){
-          if (this.ingredients[i].toLowerCase() === this.ingredientsList[ingredient].strIngredient.toLowerCase()){
-            this.ingredientsFR[i] = this.ingredientsList[ingredient].strIngredientFR
+        for (let ingredient in this.ingredientsList) {
+          if (
+            this.ingredients[i].toLowerCase() ===
+            this.ingredientsList[ingredient].strIngredient.toLowerCase()
+          ) {
+            this.ingredientsFR[i] =
+              this.ingredientsList[ingredient].strIngredientFR;
           }
         }
-        this.ingredientAndQuantity[i] = [this.ingredientsFR[i], this.ingredients[i], this.ingredientsQuantites[i], "https://www.themealdb.com/images/ingredients/"+ this.ingredients[i] +"-Small.png"]
+        this.ingredientAndQuantity[i] = [
+          this.ingredientsFR[i],
+          this.ingredients[i],
+          this.ingredientsQuantites[i],
+          'https://www.themealdb.com/images/ingredients/' +
+            this.ingredients[i] +
+            '-Small.png',
+        ];
       }
-      console.log(this.ingredientAndQuantity);
-      
+      this.recipes = this.informationMeal[0].strInstructions.split(". ")
     });
   }
 }
