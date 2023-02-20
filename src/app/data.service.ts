@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-
 export class DataService {
   constructor(private http: HttpClient) {}
 
@@ -18,7 +17,8 @@ export class DataService {
   //Chercher un repas par la première lettre
   searchMealByFirstLetter(firstLetterSearched: string) {
     return this.http.get<any>(
-      'https://www.themealdb.com/api/json/v1/1/search.php?f=' + firstLetterSearched
+      'https://www.themealdb.com/api/json/v1/1/search.php?f=' +
+        firstLetterSearched
     );
   }
 
@@ -31,13 +31,16 @@ export class DataService {
 
   //Chercher un repas aléatoire
   searchMealRandom() {
-    return this.http.get<any>('https://www.themealdb.com/api/json/v1/1/random.php');
+    return this.http.get<any>(
+      'https://www.themealdb.com/api/json/v1/1/random.php'
+    );
   }
-
 
   //liste de toutes les catégories de repas
   searchAllCategoriesMeal() {
-    return this.http.get<any>('https://www.themealdb.com/api/json/v1/1/categories.php');
+    return this.http.get<any>(
+      'https://www.themealdb.com/api/json/v1/1/categories.php'
+    );
   }
 
   //liste de toutes les catégories  (DEJA MIS DANS LE DATA CATEGORIESLIST.TS)
@@ -64,7 +67,8 @@ export class DataService {
   //Filtrer par ingredients principales
   searchByMainIngredients(mainIngredientsSearched: string) {
     return this.http.get<any>(
-      'https://www.themealdb.com/api/json/v1/1/filter.php?i=' + mainIngredientsSearched
+      'https://www.themealdb.com/api/json/v1/1/filter.php?i=' +
+        mainIngredientsSearched
     );
   }
 
@@ -86,7 +90,7 @@ export class DataService {
   searchSmallMealPicture(mealPictureSearched: string) {
     return this.http.get<any>(
       'https://www.themealdb.com/api/json/v1/1/filter.php?a=' +
-      mealPictureSearched +
+        mealPictureSearched +
         '/images/media/meals/llcbn01574260722.jpg/preview'
     );
   }
@@ -94,7 +98,30 @@ export class DataService {
   //récupérer une image de l'ingrédient
   searchIngredientPicture(ingredientSearched: string) {
     return this.http.get<any>(
-      'https://www.themealdb.com/images/ingredients/' + ingredientSearched + '.png'
+      'https://www.themealdb.com/images/ingredients/' +
+        ingredientSearched +
+        '.png'
     );
+  }
+
+  // vérifie si le meanu existe déjày
+  checkExistedMeal(newMeal: any[], actualMeal: any[]) {
+    let existed = false;
+    let newRecipe = '';
+
+      for (let j = 0; j < newMeal.length; j++) {
+
+      existed = false;
+    for (let i = 0; i < actualMeal.length; i++) {
+        if (actualMeal[i].strMeal == newMeal[j].strMeal) {
+          existed = true;
+        }
+        newRecipe = newMeal[j];
+      }
+      if (existed == false) {
+        actualMeal.push(newRecipe);
+      }
+    }
+    return actualMeal.sort((a: any, b: any) => (a.strMeal > b.strMeal ? 1 : -1));
   }
 }

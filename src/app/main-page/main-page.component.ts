@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-main-page',
@@ -6,20 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.scss'],
 })
 export class MainPageComponent {
+constructor(public dataService: DataService){}
+
   textStringReceiveFormHeaderForm: string = '';
-  arrayOfIngredientHaveFormDropdown : string[]=[]
-  arrayOfIngredientHaventFormDropdown : string[]=[]
 
   receiveSearchInputTextFormHeader(inputTextFormReceiveViaOutput: string): void {
     this.textStringReceiveFormHeaderForm = inputTextFormReceiveViaOutput;
-  }
-
-  receiveIngredientHaveArraySearchFromDropdown(arrayIngredientHaveReceive : string[]){
-    this.arrayOfIngredientHaveFormDropdown = arrayIngredientHaveReceive
-  }
-
-  receiveIngredientHaventArraySearchFromDropdown(arrayIngredientHaventReceive : string[]){
-    this.arrayOfIngredientHaventFormDropdown = arrayIngredientHaventReceive
   }
 
 }

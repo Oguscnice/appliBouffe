@@ -1,10 +1,113 @@
+<header>
+  <img
+    src="../../assets/images/logohasbulla.png"
+    [routerLink]="['/']"
+    alt="Logo du site"
+  />
+  <div class="inputForSearch">
+    <form #myForm="ngForm">
+      <!-- Input avec la valeure recherchée -->
+      <label for="searchInput"></label>
+      <input
+        type="text"
+        value=" Rechercher"
+        id="searchInput"
+        name="searchInput"
+        [(ngModel)]="searchInputForm"
+        (keyup)="inputChange(searchInputForm.toLowerCase())"
+      />
+    </form>
+  </div>
+  <div class="navbar-mobile">
+    <i *ngIf="!menuVisibility" (click)="menuburger()" class="fas fa-bars"></i>
+    <div
+      (click)="menuburger()"
+      [ngClass]="!menuVisibility ? 'menuburgerback' : 'change-menuburgerback'"
+    >
+      <div class="navbar-mobile-list">
+        <i class="fa-solid fa-circle-xmark closeMenuBurgerCross"></i>
+        <p class="aburger" [routerLink]="'/'">?</p>
+        <p class="aburger" [routerLink]="'/'">?</p>
+        <p class="aburger" [routerLink]="'/'">?</p>
+      </div>
+    </div>
+    <div
+      [ngClass]="!menuVisibility ? 'genreBurgerback' : 'change-genreBurgerback'"
+    >
+    </div>
+  </div>
+</header>
+<div class="dropdowns">
+  <div class="dropdownSelect dropdownHave">
+    <div class="dropdownTitle" (click)="iHaveVissibility()">
+      <span *ngIf="!dropdownHave">🔽</span>
+      <span *ngIf="dropdownHave">🔺</span>
+      <p>J'ai</p>
+    </div>
+    <div
+      class="dropdown"
+      *ngFor="let ingredient of ingredientsList"
+      [ngStyle]="{
+        display:
+          dropdownHave &&
+          filterNameDropdownWithInputTextFromHeader(
+            ingredient.strIngredientFR.toLowerCase()
+          )
+            ? 'flex'
+            : 'none'
+      }"
+    >
+      <div class="dropdownInside">
+        <input
+          type="checkbox"
+          name="{{ ingredient.strIngredient }}"
+          id="{{ ingredient.strIngredient }}"
+          (click)="updateDropdownHave(ingredient.strIngredient)"
+        /><label for="{{ ingredient.strIngredient }}">{{
+          ingredient.strIngredientFR
+        }}</label>
+      </div>
+    </div>
+  </div>
+  <div class="dropdownSelect dropdownHavent">
+    <div class="dropdownTitle" (click)="iHaventVissibility()">
+      <span *ngIf="!dropdownHavent">🔽</span>
+      <span *ngIf="dropdownHavent">🔺</span>
+      <p>Je n'ai pas</p>
+    </div>
+    <div
+      class="dropdown"
+      *ngFor="let ingredient of ingredientsList"
+      [ngStyle]="{
+        display:
+          dropdownHavent &&
+          filterNameDropdownWithInputTextFromHeader(ingredient.strIngredientFR)
+            ? 'flex'
+            : 'none'
+      }"
+    >
+      <div class="dropdownInside">
+        <input
+          type="checkbox"
+          name="{{ ingredient.strIngredient }}"
+          id="{{ ingredient.strIngredient }}"
+          (click)="updateDropdownHavent(ingredient.strIngredient)"
+        /><label for="{{ ingredient.strIngredient }}">{{
+          ingredient.strIngredientFR
+        }}</label>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="lists">
   <div
     *ngFor="let recipe of myRecipesList"
     class="oneRecipe"
     [ngStyle]="{
       display: filterNameWithInputTextFromHeader(recipe.strMeal)
-        ? 'flex'
+        ? addingIngredientHave(recipe)
+          ? 'flex'
+          : 'none'
         : 'none'
     }"
   >
@@ -22,3 +125,4 @@
     </h3>
   </div>
 </div>
+
