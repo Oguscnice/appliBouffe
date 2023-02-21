@@ -56,18 +56,16 @@ export class ListComponent {
 
   iHaveVissibility() {
     this.dropdownHave = !this.dropdownHave;
-    console.log(this.dropdownHave);
   }
 
   iHaventVissibility() {
     this.dropdownHavent = !this.dropdownHavent;
-    console.log(this.dropdownHavent);
   }
 
   filterNameDropdownWithInputTextFromHeader(
     ingredientNameFromNgFor: string
   ): boolean {
-    if (ingredientNameFromNgFor.includes(this.searchInputForm)) {
+    if ((ingredientNameFromNgFor.toLowerCase()).includes(this.searchInputForm)) {
       return true;
     }
     return false;
@@ -183,8 +181,6 @@ export class ListComponent {
       return true;
     }
     if (mealName.toLowerCase().includes(this.searchInputForm)) {
-      console.log(mealName);
-
       return true;
     }
     return false;
