@@ -1,5 +1,56 @@
 @import "../../styles.scss";
 
+.dropdowns {
+  display: flex;
+  z-index: 990;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: $main-color;
+
+  > .dropdownSelect {
+    height: 5vh;
+    width: 30%;
+    text-align: center;
+
+    border-radius: 10px;
+    background-color: $second-color;
+
+    > .dropdownTitle {
+      display: flex;
+      padding-top: 1.5vh;
+      padding-bottom: 1.5vh;
+      border-radius: 10px;
+
+      > span {
+        width: 30%;
+        cursor: pointer;
+      }
+      > p {
+        width: 70%;
+        margin: auto;
+        text-align: left;
+      }
+    }
+
+    > .dropdown {
+      > .dropdownInside {
+        z-index: 999;
+        height: 4vh;
+        border: 1px solid $main-color;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        > input {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
 .lists {
   z-index: 1;
   padding: 4%;
@@ -20,5 +71,98 @@
       border-radius: 25px;
       backdrop-filter: blur(10px);
     }
+  }
+}
+
+header {
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  padding: 1.5vh;
+  border: 1px solid $main-color;
+
+  > img {
+    height: 100%;
+    padding-right: 2%;
+    background-color: $second-color;
+  }
+
+  > .inputForSearch {
+    width: 80%;
+    max-width: 80%;
+
+    > form #searchInput {
+      height: 4vh;
+      width: 90%;
+      border-radius: 10px;
+      background-color: $fourth-color;
+      border: 1px solid $main-color;
+    }
+  }
+
+  > .navbar-mobile {
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+
+    > i {
+      z-index: 999;
+      font-size: 4vh;
+      color: $fourth-color;
+      cursor: pointer;
+    }
+
+    > div {
+      > .navbar-mobile-list {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $main-color;
+
+        > .closeMenuBurgerCross {
+          display: flex;
+          justify-content: flex-end;
+          scale: 3;
+          background-color: $main-color;
+          color: white;
+        }
+
+        > .aburger {
+          font-size: 3rem;
+          padding: 2rem;
+          cursor: pointer;
+          border-bottom: 1px solid $fourth-color;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+
+  .menuburgerback {
+    transition: top 1s;
+    background-color: var(--main-color);
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 500;
+  }
+
+  .change-menuburgerback {
+    transition: top 1s;
+    background-color: var(--main-color);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 500;
   }
 }
