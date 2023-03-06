@@ -25,6 +25,10 @@ export class ListComponent {
   dropdownHave: boolean = false;
   dropdownHavent: boolean = false;
 
+  eraseInput(){
+    this.searchInputForm = "";
+  }
+
   inputChange(stringReceiveForInput: any): void {
     this.searchInputForm = stringReceiveForInput;
     if (this.searchInputForm == '') {
@@ -49,6 +53,10 @@ export class ListComponent {
     }
     localStorage.setItem('myRecipesList', JSON.stringify(this.myRecipesList))
 
+  }
+
+  reloadMainPage(){
+    location.reload()
   }
 
   menuburger() {
