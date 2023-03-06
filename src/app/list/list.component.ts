@@ -47,7 +47,8 @@ export class ListComponent {
           }
         });
     }
-    console.log(this.myRecipesList);
+    localStorage.setItem('myRecipesList', JSON.stringify(this.myRecipesList))
+
   }
 
   menuburger() {
@@ -109,6 +110,8 @@ export class ListComponent {
           }
         }
       });
+      localStorage.setItem('myRecipesList', JSON.stringify(this.myRecipesList))
+
   }
 
   updateDropdownHavent(ingredientCheckboxed: any): void {
@@ -122,8 +125,6 @@ export class ListComponent {
   }
 
   searchByMainIngredientsList(ingredientHave: string[]): void {
-    console.log(ingredientHave);
-
     for (let i = 0; i < this.myRecipesList.length; i++) {
       if (!this.myRecipesList[i].strIngredient1) {
         this.dataService
@@ -133,6 +134,8 @@ export class ListComponent {
           });
       }
     }
+    localStorage.setItem('myRecipesList', JSON.stringify(this.myRecipesList))
+
   }
 
   constructor(public dataService: DataService) {}
@@ -152,10 +155,34 @@ export class ListComponent {
           }
         }
 
-        if (counter == this.ingredientHave.length) {
+        if (counter >= this.ingredientHave.length) {
           return true;
         }
         return false;
+      }
+    }
+    return true;
+  }
+
+  addingIngredientHavent(recipe: any): boolean {
+    if (this.ingredientHavent.length !== 0) {
+      let counter = 0;
+      for (let i = 0; i < this.ingredientHavent.length; i++) {
+        for (let property in recipe) {
+          if (
+            property.includes('strIngredient') &&
+            recipe[property] !== null &&
+            recipe[property] !== '' &&
+            recipe[property] == this.ingredientHavent[i]
+          ) {
+            counter++;
+          }
+        }
+
+        if (counter >= this.ingredientHavent.length) {
+          return false;
+        }
+        return true;
       }
     }
     return true;
@@ -166,6 +193,10 @@ export class ListComponent {
   }
 
   wantRandomForBeing() {
+    if (localStorage.getItem('myRecipesList')){
+      this.myRecipesList = JSON.parse(localStorage.getItem('myRecipesList')!)
+    }
+
     for (let i = 0; i < 4; i++) {
       this.dataService.searchMealRandom().subscribe((data) => {
         this.myRecipesList.push(data.meals[0]);
@@ -174,6 +205,7 @@ export class ListComponent {
         );
       });
     }
+    localStorage.setItem('myRecipesList', JSON.stringify(this.myRecipesList))
   }
 
   filterNameWithInputTextFromHeader(mealName: string): boolean {

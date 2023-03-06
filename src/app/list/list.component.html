@@ -106,7 +106,9 @@
     [ngStyle]="{
       display: filterNameWithInputTextFromHeader(recipe.strMeal)
         ? addingIngredientHave(recipe)
+          ?  addingIngredientHavent(recipe)
           ? 'flex'
+          : 'none'
           : 'none'
         : 'none'
     }"
