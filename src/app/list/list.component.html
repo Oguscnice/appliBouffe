@@ -17,7 +17,9 @@
         (keyup)="inputChange(searchInputForm.toLowerCase())"
       />
     </form>
+    <p (click)="eraseInput()">❌</p>
   </div>
+
   <div class="navbar-mobile">
     <i *ngIf="!menuVisibility" (click)="menuburger()" class="fas fa-bars"></i>
     <div
@@ -69,6 +71,7 @@
       </div>
     </div>
   </div>
+  <div><img src="../../assets/images/logoRecycle.png" alt="" class="recycleImg" (click)="reloadMainPage()"></div>
   <div class="dropdownSelect dropdownHavent">
     <div class="dropdownTitle" (click)="iHaventVissibility()">
       <span *ngIf="!dropdownHavent">🔽</span>
