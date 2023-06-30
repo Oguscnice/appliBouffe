@@ -5,9 +5,9 @@ $second-color: rgba(39, 39, 39, 1);
 $third-color: rgba(62, 60, 60, 1);
 $fourth-color: rgb(255, 255, 255);
 
-$titleH1FontFamily: "Good Timing", sans-serif;
-$titleH2FontFamily: "Good Timing", sans-serif;
-$titleH3FontFamily: "Good Timing", sans-serif;
+$titleH1FontFamily: "Arial Bold", sans-serif;
+$titleH2FontFamily: "Arial", sans-serif;
+$titleH3FontFamily: helvetica,  sans-serif;
 $titleH4FontFamily: "Good Timing", sans-serif;
 $textFontFamily: "Good Timing", sans-serif;
 
@@ -22,6 +22,7 @@ $textFontFamily: "Good Timing", sans-serif;
 
 h1 {
   font-family: $titleH1FontFamily;
+  font-weight: bold;
 }
 h2 {
   font-family: $titleH2FontFamily;
